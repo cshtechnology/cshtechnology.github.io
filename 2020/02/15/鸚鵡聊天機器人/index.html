@@ -5,13 +5,17 @@
   
 
   
-  <title>C.S.H program design blog</title>
+  <title>鸚鵡聊天機器人 | C.S.H program design blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="C.S.H program design blog">
-<meta property="og:url" content="https://cshtechnology.github.io/index.html">
+  <meta name="description" content="from django.conf import settingsfrom django.http import HttpResponse, HttpResponseBadRequest, HttpResponseForbiddenfrom django.views.decorators.csrf import csrf_exempt from linebot import LineBotApi,">
+<meta property="og:type" content="article">
+<meta property="og:title" content="鸚鵡聊天機器人">
+<meta property="og:url" content="https://cshtechnology.github.io/2020/02/15/%E9%B8%9A%E9%B5%A1%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8%E4%BA%BA/index.html">
 <meta property="og:site_name" content="C.S.H program design blog">
+<meta property="og:description" content="from django.conf import settingsfrom django.http import HttpResponse, HttpResponseBadRequest, HttpResponseForbiddenfrom django.views.decorators.csrf import csrf_exempt from linebot import LineBotApi,">
 <meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2020-02-15T14:32:00.000Z">
+<meta property="article:modified_time" content="2020-04-05T14:33:53.693Z">
 <meta property="article:author" content="Shin Hong">
 <meta property="article:tag" content="tech">
 <meta property="article:tag" content=" blog">
@@ -68,49 +72,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-第一次設計LineBot聊天機器人" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/20/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%A8%AD%E8%A8%88LineBot%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8%E4%BA%BA/" class="article-date">
-  <time datetime="2020-03-20T14:05:00.000Z" itemprop="datePublished">2020-03-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/20/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%A8%AD%E8%A8%88LineBot%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8%E4%BA%BA/">LineBot聊天機器人</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p> for event in events:<br>            if isinstance(event, MessageEvent):<br>                if isinstance(event.message, TextMessage):<br>                    mtext = event.message.text<br>                    if mtext == ‘那你覺得我午餐該吃什麼’:<br>                        func.sendText(event)<br>                    elif mtext == ‘@傳送圖片’:<br>                        func.sendImage(event)<br>                    elif mtext == ‘@傳送貼圖’:<br>                        func.sendStick(event)<br>                    elif mtext == ‘你午餐吃什麼呢’:<br>                        func.sendMulti(event)<br>                    elif mtext == ‘附近有什麼餐廳嗎’:<br>                        func.sendPosition(event)<br>                    if mtext == ‘有推薦的餐點嗎’:<br>                        func.sendQuickreply(event)<br>        return HttpResponse()<br>    else:<br>        return HttpResponseBadRequest()</p>
-<p>心得:<br>     學習了幾個月的程式後,終於設計出一個作品了,在設計程式的過程中,遇到了一些困難(import module時發生錯誤、在撰寫程式碼時語法不正確等),藉由網路資源及書籍,最終找尋出合適的方法,經過一兩個禮拜的努力後,終於完成了現在的聊天機器人.</p>
-<pre><code>在撰寫程式碼時,有時會感到疲倦甚至是煩躁,但只要換個角度想,咬緊牙度過了這關後,自己又離目標更近了一點,也就更有動力的往下繼續努力.
-
-最重要的是,經過這次的實作,了解到學習程式和設計程式有很大的不同,一個需要的是記憶,一個需要的是思考,今後也要多多練習實作培養出應有的計算思維.</code></pre>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://cshtechnology.github.io/2020/03/20/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%A8%AD%E8%A8%88LineBot%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8%E4%BA%BA/" data-id="ck8n5cxrh00005svq46xd0ojv" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-鸚鵡聊天機器人" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-鸚鵡聊天機器人" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/02/15/%E9%B8%9A%E9%B5%A1%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8%E4%BA%BA/" class="article-date">
   <time datetime="2020-02-15T14:32:00.000Z" itemprop="datePublished">2020-02-15</time>
@@ -123,8 +85,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/15/%E9%B8%9A%E9%B5%A1%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8%E4%BA%BA/">鸚鵡聊天機器人</a>
+    <h1 class="article-title" itemprop="name">
+      鸚鵡聊天機器人
     </h1>
   
 
@@ -159,11 +121,23 @@ else:
     </footer>
   </div>
   
-</article>
-
+    
+<nav id="article-nav">
+  
+    <a href="/2020/03/20/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%A8%AD%E8%A8%88LineBot%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8%E4%BA%BA/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          LineBot聊天機器人
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
   
-
+</article>
 
 </section>
         
